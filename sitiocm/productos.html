@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CM Petshop | Productos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="file:///C:/Users/Usuario/OneDrive/Im%C3%A1genes/cm%20logo.jpg" alt="CM Petshop">
+        </div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html" class="activa">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="carrito-wrapper">
+            <button class="carrito" onclick="mostrarCarrito()">
+                🛒 Carrito <span id="contador">0</span>
+            </button>
+            <div class="carrito-panel" id="carritoPanel">
+                <div class="carrito-lista" id="carritoLista">
+                    <p class="carrito-vacio">Tu carrito está vacío 🐾</p>
+                </div>
+                <div class="carrito-total">
+                    <span>Total</span>
+                    <span id="carritoTotal">$0</span>
+                </div>
+                <button class="carrito-finalizar" id="btnFinalizar" disabled>Finalizar pedido por WhatsApp</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="productos">
+            <div class="titulo-seccion">
+                <p>TODO PARA TU MASCOTA</p>
+                <h1> Nuestros productos </h1>
+                <p> Elegí lo mejor para tu mejor amigo.</p>
+            </div>
+
+            <div class="barra-productos">
+                <button class="categoria activa" data-categoria="todos"> Todos </button>
+                <button class="categoria" data-categoria="alimentos"> Alimentos </button>
+                <button class="categoria" data-categoria="snacks"> Premios </button>
+                <button class="categoria" data-categoria="accesorios"> Accesorios/ropa </button>
+                <button class="categoria" data-categoria="higiene"> Higiene </button>
+                <input type="text" id="buscador" placeholder=" Buscar producto">
+            </div>
+
+            <div class="productos-grid">
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\agilitygatosadultos.jpg" alt="Agility+ adulto">
+                    </div>
+                    <h3> Comida para gatos Adultos, Agility + </h3>
+                    <ul class="ingredientes">
+                        <li>Masa muscular magra</li>
+                        <li>Salud urinaria</li>
+                        <li>Piel y pelaje saludable</li>
+                        <li>Óptima absorción de nutrientes</li>
+                    </ul>
+
+                    <p>12 meses o más</p>
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$55.900 (10kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$67.000 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$9.000 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\agilityurinary.jpg" alt="Agility+ Urinary">
+                    </div>
+                    <h3> Alimento para gatos, Agility+ </h3>
+                    <p> Urinary</p>
+                    <p> Fórmula de excelencia para gatos adultos con tendencia al sobrepeso</p>
+                    <ul class="ingredientes"></ul>
+                    <li>Óptima nutrición para su máximo potencial</li>
+                    <li>Salud urinaria</li>
+                    <li>Contol de ph urinario</li>
+                    <li>Bienestr integral</li>
+                    <li>Piel y pelaje saludable</li>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$59.800 (10 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$71.800 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$9.600 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="clevernutritiongatos.jpg" alt="Clever Nutrition">
+                    </div>
+                    <h3> Alimento para gatos, Clever Nutrition + </h3>
+                    <ul class="ingredientes">
+                        <li>Salud del tracto urinario</li>
+                        <li>Dientes sin sarro y aliento fresco</li>
+                        <li>Mejor vision y consistencia ósea</li>
+                        <li>Pelaje sano y brillante</li>
+                        <li>Protección inmunológica</li>
+                    </ul>
+
+
+                    <p> Alimento balanceado para gatos adultos y gatitos, premium</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$25.500 (10 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$35.800 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$4.000 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="bocatto.jpg" alt="Bocatto">
+                    </div>
+                    <h3> Alimento para gatos, Bocatto + </h3>
+                    <ul class="ingredientes">
+                        <li>Tracto urinario saludable</li>
+                        <li>Dientes sin sarro y aliento fresco</li>
+                        <li>Prebióticos</li>
+                        <li>Pelaje sano y brillante</li>
+                        <li>Fuente de Taurina</li>
+                    </ul>
+
+
+                    <p> Sabor pescado, Nutrciión completa</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$18.600 (10 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$73.000 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$3.000 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="agilitypollo.jpg" alt="Agility + pollo">
+                    </div>
+                    <h3> Alimento para gatos, Agility+ + </h3>
+                    <ul class="ingredientes">
+                        <li>Pollo</li>
+                        <li>Miscanthus</li>
+                        <li>Prebióticos</li>
+                        <li>Fibras naturales</li>
+                        <li>Té verde</li>
+                        <li>Extracto de romero</li>
+                    </ul>
+
+
+                    <p> Fórmula de excelencia para gatos adultos con tendencia al sobrepeso</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$65.100 (10 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$78.200 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$10.400 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\agilityperrosadultos.jpg" alt="Agility +">
+                    </div>
+                    <h3> Alimento para perros, Agility + </h3>
+                    <ul class="ingredientes">
+                        <li>Condición corporal óptima</li>
+                        <li>Piel y pelaje saludable</li>
+                        <li>Huesos y dietes fuertes</li>
+                        <li>Salud digestiva</li>
+                    </ul>
+
+
+                    <p> Perros adultos talla mediana y grande, 12 meses o más</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$55.400 (22 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$66.500 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$1.800 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\7vidassalmon.jpg" alt="7 vidas salmón">
+                    </div>
+                    <h3> Alimento para gatos, 7 vidas </h3>
+                    <ul class="ingredientes">
+                        <li> Receta de salmón</li>
+                        <li>Omega 3 y 6 mas biotina</li>
+                        <li>Proteínas</li>
+                    </ul>
+
+
+                    <p> Gatos adultos +1 año, esterilizados Salmón</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$45.600 (10 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$54.800 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$7.300(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\7vidascarneypollo.jpg" alt="7 vidas salmón">
+                    </div>
+                    <h3> Alimento para gatos, 7 vidas </h3>
+                    <ul class="ingredientes">
+                        <li> Receta de carne y pollo</li>
+                        <li>Omega 3 y 6 mas biotina</li>
+                        <li>Proteínas</li>
+                    </ul>
+
+
+                    <p> Gatos adultos +1 año, esterilizados Carne y pollo</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">c:\Users\Usuario\Downloads\7vidascarneypollo.jpg
+                            <strong>$45.600 (10 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$54.800 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$7.300(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\eukanubapuppy.jpg" alt="Eukanuba">
+                    </div>
+                    <h3> Alimento para perros, Eukanuba </h3>
+                    <ul class="ingredientes">
+                        <li>Proteína de pollo</li>
+                        <li>Calcio para promover huesos fuertes</li>
+                        <li>DHA para contribuir con el proceso de aprendizaje</li>
+                        <li>Optimo nivel de energia para su crecimiento y juego</li>
+                    </ul>
+
+
+                    <p> Para perros cachorros, razas medianas de 12 meses</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$74.500 (15 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$89.400 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$8.000(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\has.jpg" alt="Has">
+                    </div>
+                    <h3> Alimento para perros, Has criadores</h3>
+                    <ul class="ingredientes">
+                        <li>18% proteína de alta calidad y digetibilidad</li>
+                        <li>Alimento balanceado completo</li>
+                        <li>Vitaminas y minerales</li>
+                        <li>Fibras</li>
+                        <li>Nutrientes para el mantenimiento general</li>
+                    </ul>
+
+
+                    <p> Alimento balanceado para perros adultos, sabor carne</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$28.000 (20 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$33.600 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$2.300(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\nutricarepequeños.jpg" alt="Nutricare">
+                    </div>
+                    <h3> Alimento para perros, Nutricare</h3>
+                    <ul class="ingredientes">
+                        <li>Salud intestinal y alta digestividad</li>
+                        <li>Excelente sabor</li>
+                        <li>Salus de la piel y pelo</li>
+                        <li>Sin colorantes con antioxidantes naturales</li>
+                    </ul>
+
+
+                    <p> Alimento 100% balanceado y completo para perros adultos, mordida pequeña</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$40.500 (20 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$48.600 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$3.300(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\nuteicareadultos.jpg" alt="Nutricare">
+                    </div>
+                    <h3> Alimento para perros, Nutricare</h3>
+                    <ul class="ingredientes">
+                        <li>Salud intestinal y alta digestividad</li>
+                        <li>Excelente sabor</li>
+                        <li>Salus de la piel y pelo</li>
+                        <li>Sin colorantes con antioxidantes naturales</li>
+                    </ul>
+
+
+                    <p> Alimento 100% balanceado y completo para perros adultos, mordida grande</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$40.500 (20 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$48.600 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$3.300(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\royalcanin.jpg" alt="Royal Canin puppy">
+                    </div>
+                    <h3> Alimento para perros, Royal Canin</h3>
+                    <ul class="ingredientes">
+                        <li>Fortalecimiento del sistema inmunológico</li>
+                        <li>Desarrollo del cerebro</li>
+                    </ul>
+
+
+                    <p>2-10 meses, peso adulto hasta 10kg</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$122.800 (15 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$147.400 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$13.000(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\sieger.jpg" alt="Sieger criadores">
+                    </div>
+                    <h3> Alimento para perros, Sieger</h3>
+                    <ul class="ingredientes">
+                        <li>Óptima vitalidad celular</li>
+                        <li>Equilibrio de la microbiota</li>
+                        <li>Salud cutánea</li>
+                    </ul>
+
+
+                    <p>Para todas las razas</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$79.400 (20 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$95.300 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$6.400(kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\agilitykitten.jpg" alt="Agility kitten">
+                    </div>
+                    <h3> Alimento para gatos, Agility</h3>
+                    <ul class="ingredientes">
+                        <li>Óptima respuesta inmunológica</li>
+                        <li>Desarrollo saludaable del cerebro y la visión</li>
+                        <li>Huesos y dientes fuertes </li>
+                        <li>Salud cutánea</li>
+                    </ul>
+
+
+                    <p>Hasta 12 meses</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$15.000 (1,5 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\agilityurinary.jpg" alt="Agility urinary">
+                    </div>
+                    <h3> Alimento para gatos, Agility</h3>
+                    <ul class="ingredientes">
+                        <li>Óptima nutrición para su máximo potencial</li>
+                        <li>Salud urinaria</li>
+                        <li>Contol de ph urinario</li>
+                        <li>Bienestr integral</li>
+                        <li>Piel y pelaje saludable</li>
+                    </ul>
+
+
+                    <p>Hasta 12 o más meses</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$15.000 (1,5 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="alimentos">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\criadores.jpg" alt="Biopet criadores">
+                    </div>
+                    <h3> Alimento para perror, Biopet</h3>
+                    <ul class="ingredientes">
+                        <li>Pulpa de remolacha</li>
+                        <li>Yucca schidigera</li>
+                        <li>Ácidos grasos Omega 3 y 6</li>
+                    </ul>
+
+
+                    <p>Alimento balanceado completo para todas las razas</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$30.300 (20 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$39.200 (bolsa)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                        <div class="opcion-precio">
+                            <strong>$2.600 (kilo)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\silicalimon.jpg" alt="silica fragancia limon">
+                    </div>
+                    <h3> Arena para gatos, Silica</h3>
+                    <ul class="ingredientes">
+                        <li>Fragancia a limon</li>
+                        <li>Rápida absorción de la orina</li>
+                        <li>Neutraliza completamente los olores</li>
+                        <li>Calidad premium</li>
+                    </ul>
+
+
+                    <p>1 gato, 1 bolsa, 1 vez al mes</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$15.000 (3,8 l)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\silicalavanda.jpg" alt="silica fragancia lavanda">
+                    </div>
+                    <h3> Arena para gatos, Silica</h3>
+                    <ul class="ingredientes">
+                        <li>Fragancia a lavanda</li>
+                        <li>Rápida absorción de la orina</li>
+                        <li>Neutraliza completamente los olores</li>
+                        <li>Calidad premium</li>
+                    </ul>
+
+
+                    <p>1 gato, 1 bolsa, 1 vez al mes</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$15.000 (3,8 l)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="piedras de gatos.png" alt="piedras de gato">
+                    </div>
+                    <h3> piedraspara gato</h3>
+                     <ul class="ingredientes">
+                        <li>Control de olores</li>
+                        <li>Facilitan la limpieza diaria</li>
+                    </ul>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong> 4.500 (4 kg)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="kitSanitarios.png" alt="kits sanitarios">
+                    </div>
+                    <h3> Areneros para gatos </h3>
+                    <ul class="ingredientes">
+                        <li>Colores:</li>
+                        <li>rojo</li>
+                        <li>lila</li>
+                        <li>Verde manzana</li>
+                        <li>Beige</li>
+                    </ul>
+
+
+                    <p>Areneros con su platito</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$11.000</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="guanteCepillo.png" alt="guante cepillo">
+                    </div>
+                    <h3> Guante cepillo </h3>
+                    <ul class="ingredientes">
+                        <li>ideales para eliminar el pelo de mascotas como gatos y perros</li>
+                        <li>Ayuda a eliminarel pelo sobre la ropa</li>
+                    </ul>
+
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$7.000</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="cepillo.png" alt="cepillo con expulsador">
+                    </div>
+                    <h3> Cepillo expulsador</h3>
+                    <ul class="ingredientes">
+                        <li>ideales para eliminar el pelo de mascotas como gatos y perros</li>
+                        <li>Ayuda a eliminarel pelo sobre la ropa</li>
+                    </ul>
+
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$7.000</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="higiene">
+                    <div class="producto-imagen">
+                        <img src="https://resources.claroshop.com/medios-plazavip/s2/10667/5313565/660efc0708497-d_975738-mlu73006323754_112023-o-1600x1600.jpg?scale=500&qlty=75"
+                            alt="alicate para perro">
+                    </div>
+                    <h3> Alicate para uñas de perro</h3>
+                    <ul class="ingredientes">
+                    </ul>
+
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$5.300</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="snacks">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\pedigreePremios.jpg" alt="pedigre bocaditos">
+                    </div>
+                    <h3> Alimento humedo para perros, Pedigree</h3>
+                    <ul class="ingredientes">
+                        <li>alimento completo y balamceado</li>
+                        <li>Sabores: carne, pollo</li>
+                        <li>ingredientes naturales</li>
+                    </ul>
+
+
+                    <p>Para todas las razas y edades</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>1.300 (85g)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="snacks">
+                    <div class="producto-imagen">
+                        <img src="c:\Users\Usuario\Downloads\whiskas.jpg" alt="whiskas">
+                    </div>
+                    <h3> Bocados para gatos, Whiskas</h3>
+                    <ul class="ingredientes">
+                        <li>Crocantes por fuera, humedos por dentro</li>
+                        <li>proteínas esenciales, vitaminas y minerales</li>
+                        <li>Sabores: salmon, carne, sardina, pavo y pollo</li>
+                    </ul>
+
+
+                    <p> para 1 año o mas, y 2-12</p>
+
+                    <div class="producto-footer">
+                        <div class="opcion-precio">
+                            <strong>$1.300 (85 g)</strong>
+                            <button class="agregar"> + </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <img src="logo.png" alt="CM Petshop"
+                class="footer-logo">
+            <p>Alimentación saludable para una vida feliz.</p>
+        </div>
+
+        <div>
+            <h3>Seguinos</h3>
+            <a href="https://www.instagram.com/cm.petshopp?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+                target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/019/874/351/original/instagram-apps-icon-free-png.png"
+                    class="footer-ig">
+                <p>@cm.petshopp</p>
+            </a>
+        </div>
+
+        <div>
+            <h3> Consultanos </h3>
+            <a href="https://wa.me/5492993291631" target="_blank" rel="noopener noreferrer">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.zuWuiC-_fcwY4c7NGSkUlwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Logo de WhatsApp" class="footer-whats">
+                <p> WhatsApp</p>
+            </a>
+        </div>
+
+        <div class="copyright">
+            © 2026 CM Petshop.
+            Todos los derechos reservados.
+            <p>Esta página fue creada por la estudiante Olave Bianca del colegio tecnologico UTN-FRN</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
